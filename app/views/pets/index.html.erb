@@ -1,0 +1,9 @@
+<h1>All our lovely Pets🐈</h1>
+
+<ul>
+  <% @pets.each do |pet| %>
+  <h4><%= pet.name %></h4>
+  <% end %>
+</ul>
+
+<%= link_to 'Add a new missing Pet', new_pet_path %>
